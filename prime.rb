@@ -1,15 +1,9 @@
-def is_prime?(num)
-  if num < 2
-    return true
-  end
-  i = 2
-  while i <= num / 2
-    if num % i == 0
-      return true
+def prime?(int)
+    if int < 0 || int == 0 || int == 1
+        return false
+    else 
+        (2..int-1).to_a.all? do |fact|
+            int % fact !=0
+        end
     end
-    i += 1
-  end
-  return false
 end
-
-puts is_prime?(2)

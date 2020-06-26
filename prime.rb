@@ -12,4 +12,4 @@ def is_prime?(num)
   return true
 end
 
-puts is_prime?(15485863)
+puts is_prime?(2)
